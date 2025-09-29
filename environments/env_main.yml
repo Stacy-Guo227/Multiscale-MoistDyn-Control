@@ -271,4 +271,3 @@ dependencies:
   - pip:
     - cdsapi==0.5.1
     - tqdm==4.61.2
-prefix: /home/ch995334/miniconda3/envs/weiting
