@@ -1,0 +1,7 @@
+# This file contains the url where public datasets are accessed.
+
+1. ERA5: Pressure level data at https://cds.climate.copernicus.eu/datasets/derived-era5-single-levels-daily-statistics?tab=download and land surface data at https://cds.climate.copernicus.eu/datasets/reanalysis-era5-land?tab=overview, provided by Copernicus Climate Change Service information. Neither the European Commission nor ECMWF is responsible for any use that may be made of the Copernicus information or data it contains.
+2. IMERG: https://disc.gsfc.nasa.gov/, provided by GES DISC.
+3. IBTrACS: https://www.ncei.noaa.gov/products/international-best-track-archive, provided by National Centers for Environmental Information, NOAA.
+4. Central Weather Administration observation data: https://asrad.pccu.edu.tw/, provided by Atmospheric Science Research and Application Databank (ASRAD).
+
