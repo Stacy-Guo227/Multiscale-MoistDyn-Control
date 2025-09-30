@@ -5,24 +5,24 @@ This repository contains code and resources for the paper:
 > Guo et al. (2025). "A Promising Downscaling Strategy for Topographic Heavy Rainfalls over the Asian-Australian Monsoon Region by Leveraging Mutli-Scale Moisture Dynamical Control" *(Submitted)*.
 
 ## Structure
-Multiscale-MoistDyn-Control/
-├── README.md
-├── environments/
-│   └── env_main.yml      # (used for code in `notebooks/main` and `src/main`)
-│   └── env_taiwanvvm.yml # (used for code in `notebooks/taiwanvvm` and `src/taiwanvvm`)
-│   └── env_vae.yml       # (used for code in `src/vae/`)
-├── data/
-│   ├── raw/              # (unprocessed data and public URLs)
-│   └── processed/        # (ready-to-use data)
-│   └── vae_model/        # (model.h5, training log)
-|       └── model_dataset # (dataset[train/val/test], fixed latent vectors)
-├── notebooks/            # (for reproducing figures)
-│   └── main/
-│   └── taiwanvvm/
-├── src/                  # (source code for processing data, model training, and plotting utilities)
-│   └── main/
-│   └── taiwanvvm/
-└── └── vae/
+Multiscale-MoistDyn-Control/  
+├── README.md  
+├── environments/  
+│   └── env_main.yml      # (used for code in `notebooks/main` and `src/main`)  
+│   └── env_taiwanvvm.yml # (used for code in `notebooks/taiwanvvm` and `src/taiwanvvm`)  
+│   └── env_vae.yml       # (used for code in `src/vae/`)  
+├── data/  
+│   ├── raw/              # (unprocessed data and public URLs)  
+│   └── processed/        # (ready-to-use data)  
+│   └── vae_model/        # (model.h5, training log)  
+|       └── model_dataset # (dataset[train/val/test], fixed latent vectors)  
+├── notebooks/            # (for reproducing figures)  
+│   └── main/  
+│   └── taiwanvvm/  
+├── src/                  # (source code for processing data, model training, and plotting utilities)  
+│   └── main/  
+│   └── taiwanvvm/  
+└── └── vae/  
 
 ## Notice
 ### `/data/`
