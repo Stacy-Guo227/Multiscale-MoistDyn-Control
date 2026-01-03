@@ -13,7 +13,7 @@ from matplotlib.gridspec import GridSpec
 class PlotTools_vvm():
     def __init__(self):
         self.proj = ccrs.PlateCarree()
-        self.ds_topo = xr.open_dataset('../../data/raw/vvm_TOPO.nc')        
+        self.ds_topo = xr.open_dataset('../../data/raw/vvm_TOPO.nc')           
     
     def Axe_map(self, fig, gs, 
                 xlim_, ylim_, **grid_info):
@@ -38,7 +38,7 @@ class PlotTools_vvm():
         return axe
     
     def Plot_vvm_map(self, axe, color, linewidth):
-        axe.contour(self.ds_topo.lon, self.ds_topo.lat, self.ds_topo.TOPO, 
+        axe.contour(self.ds_topo.lon, self.ds_topo.lat, self.ds_topo.topo, 
                     levels=np.array([-1e-3, 1e-3]), 
                     colors=color, linewidths=linewidth)
     
@@ -47,11 +47,11 @@ class PlotTools_vvm():
         alpha_list = [0, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8]
         cmap_topo  = colors.ListedColormap([(0, 0, 0, i) for i in alpha_list])
         norm_      = colors.BoundaryNorm(topo_bounds, cmap_topo.N, extend='max')
-        imtopoh    = axe.contourf(self.ds_topo.lon, self.ds_topo.lat, self.ds_topo.TOPO*1e2, 
+        imtopoh    = axe.contourf(self.ds_topo.lon, self.ds_topo.lat, self.ds_topo.height*1e3, 
                                   levels=topo_bounds, 
                                   cmap=cmap_topo, norm=norm_, extend='max', antialiased=1)
         if linewidth is not None:
-            axe.contour(self.ds_topo.lon, self.ds_topo.lat, self.ds_topo.TOPO*1e2, levels=np.array([499.99, 500.01]), 
+            axe.contour(self.ds_topo.lon, self.ds_topo.lat, self.ds_topo.height*1e3, levels=np.array([499.99, 500.01]), 
                         colors=color, linewidths=linewidth)
         else:
             pass
