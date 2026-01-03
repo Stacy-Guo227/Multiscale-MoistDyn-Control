@@ -2,13 +2,13 @@
 
 This repository contains code and resources for the paper:
 
-> Guo et al. (2025). "A Promising Downscaling Strategy for Topographic Heavy Rainfalls over the Asian-Australian Monsoon Region by Leveraging Mutli-Scale Moisture Dynamical Control" *(Submitted)*.
+> Guo et al. (2026). "A Promising Downscaling Strategy for Topographic Heavy Rainfalls over the Asian-Australian Monsoon Region by Leveraging Mutli-Scale Moisture Dynamical Control" *(Under Review)*.
 
 ## Structure
 - `environments/`  
   - `env_main.yml`      (used for code in `notebooks/main` and `src/main`)  
   - `env_taiwanvvm.yml` (used for code in `notebooks/taiwanvvm` and `src/taiwanvvm`)  
-  - `env_vae.yml`       (used for code in `src/vae`)  
+  - `env_vae.yml`       (used for code in `notebooks/vae/` and `src/vae`)  
 - `data/`  
   - `raw/`              (unprocessed data and public URLs)  
   - `processed/`        (ready-to-use and demo. data)  
@@ -20,6 +20,7 @@ This repository contains code and resources for the paper:
 - `notebooks/`          (for reproducing figures)  
   - `main/`  
   - `taiwanvvm/` 
+  - `vae/`
 ## Notice
 ### Data
 - Larger processed files can be accessed at [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17199183.svg)](https://doi.org/10.5281/zenodo.17199183). Please place them under `/data/processed` after download. These include:
