@@ -27,11 +27,11 @@ def Load_latent_vectors(data:str):
     Load saved latent vectors (to avoid the slight random effect from the model optimizer).
     """
     try:
-        if data in list(np.load(f'../../data/vae_model/model_dataset/fix_lv_era5.npy', allow_pickle=True).item().keys()):
-            return np.load(f'../../data/vae_model/model_dataset/fix_lv_era5.npy', allow_pickle=True).item()[data]
+        if data in list(np.load(f'../../data/processed/fix_latent_vectors/V2_sum_lv_era5_taiesm.npy', allow_pickle=True).item().keys()):
+            return np.load(f'../../data/processed/fix_latent_vectors/V2_sum_lv_era5_taiesm.npy', allow_pickle=True).item()[data]
         else:
             print('Wrong data name. Please choose one from below.')
-            print(np.load(f'../../data/vae_model/model_dataset/fix_lv_era5.npy', allow_pickle=True).item().keys())
+            print(np.load(f'../../data/processed/fix_latent_vectors/V2_sum_lv_era5_taiesm.npy', allow_pickle=True).item().keys())
     except:
         print("Please provide the files for saved latent vectors by referring to the code file: fix_latent vectors.py")
 
