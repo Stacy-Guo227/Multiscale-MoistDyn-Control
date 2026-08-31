@@ -2,7 +2,7 @@
 
 This repository contains code and resources for the paper:
 
-> Guo et al. (2026). "A Promising Downscaling Strategy for Topographic Heavy Rainfalls over the Asian-Australian Monsoon Region by Leveraging Mutli-Scale Moisture Dynamical Control" *(Under Review)*.
+> Guo et al. (2026). "Leveraging Multi-Scale Moisture Dynamical Control for Topographic Heavy Rainfall: A Monsoon-Wide Classification Strategy with High-Resolution Downscaling over Taiwan" *(Under Review)*.
 
 ## Structure
 - `environments/`  
